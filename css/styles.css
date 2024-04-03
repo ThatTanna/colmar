@@ -570,6 +570,10 @@ header h2 {
 		list-style: none;
 	}
 
+	.learning-mobile > ul > li:hover {
+		background-color: #828282;
+	}
+
 }
 
 /* END OF LEARNING */
