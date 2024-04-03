@@ -512,7 +512,7 @@ header h2 {
 }
 
 .learning-cards h3 {
-	font-size: 2rem;
+	font-size: 2.4rem;
 	margin: 1rem;
 }
 
@@ -562,7 +562,7 @@ header h2 {
 		margin: 2rem;
 	}
 
-	.learning-mobile > ul > li {
+	.learning-mobile>ul>li {
 		background-color: #c8c8c8;
 		padding: 2rem;
 		margin: 1rem;
@@ -573,3 +573,110 @@ header h2 {
 }
 
 /* END OF LEARNING */
+
+/* START OF THESIS EXHIBIT */
+
+.exhibit {
+	grid-column: full--start / full--end;
+	padding: 2rem;
+}
+
+.exhibit h1 {
+	font-size: 4.5rem;
+	line-height: 1;
+	padding: 2rem;
+	text-align: center;
+}
+
+.thesis {
+	display: grid;
+	grid-column: full--start / full--end;
+	grid-template-columns: 60% 40%;
+
+}
+
+.thesis-left {
+	padding: 1.5em;
+}
+
+.thesis-left video {
+	width: 100%;
+}
+
+.thesis-left h3 {
+	font-size: 2.5rem;
+	margin: 1.5rem 0rem;
+}
+
+.thesis-left h4 {
+	font-size: 1.5rem;
+}
+
+.thesis-right {
+	padding: 1.5em;
+}
+
+.thesis-card {
+	display: grid;
+	grid-column: full--start / full--end;
+	grid-template-columns: 35% 65%;
+	padding: 1rem;
+
+}
+
+.thesis-card:hover {
+	background-color: #c8c8c8;
+}
+
+.thesis-right img {
+	width: 100%;
+}
+
+.thesis-card-texts {
+	margin: 1rem;
+}
+
+.thesis-card-texts h3 {
+	margin-bottom: 1rem;
+	font-size: 2rem;
+}
+
+.thesis-card-texts h4 {
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+}
+
+/* DESKTOP SECTION */
+
+.thesis-mobile {
+	display: none;
+}
+
+/* MOBILE SECTION */
+
+@media only screen and (max-width: 37.5em),
+(max-width: 48em) {
+
+	.exhibit {
+		display: none;
+	}
+
+	.thesis-mobile {
+		display: grid;
+		grid-column: full--start / full--end; 
+		grid-template-columns: 1fr;
+		font-size: 2.5rem;
+		padding: 2rem;
+	}
+
+	.thesis-mobile h1 {
+		text-align: center;
+		margin: 2rem;
+	}
+
+	.thesis-mobile video {
+		width: 100%;
+	}
+}
+
+/* END OF THESIS EXHIBIT */
